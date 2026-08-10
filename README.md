@@ -45,10 +45,10 @@ Current release info
 Installing mesas
 ================
 
-Installing `mesas` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `mesas` from the `conda-forge/label/mesas_dev` channel can be achieved by adding `conda-forge/label/mesas_dev` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/mesas_dev
 conda config --set channel_priority strict
 ```
 
@@ -94,7 +94,7 @@ It is possible to list all of the versions of `mesas` available on your platform
 <summary>With conda</summary>
 
 ```
-conda search mesas --channel conda-forge
+conda search mesas --channel conda-forge/label/mesas_dev
 ```
 
 </details>
@@ -103,7 +103,7 @@ conda search mesas --channel conda-forge
 <summary>With mamba</summary>
 
 ```
-mamba search mesas --channel conda-forge
+mamba search mesas --channel conda-forge/label/mesas_dev
 ```
 
 </details>
@@ -112,7 +112,7 @@ mamba search mesas --channel conda-forge
 <summary>With pixi</summary>
 
 ```
-pixi search mesas --channel conda-forge
+pixi search mesas --channel conda-forge/label/mesas_dev
 ```
 
 </details>
@@ -122,13 +122,13 @@ pixi search mesas --channel conda-forge
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search mesas --channel conda-forge
+mamba repoquery search mesas --channel conda-forge/label/mesas_dev
 
 # List packages depending on `mesas`:
-mamba repoquery whoneeds mesas --channel conda-forge
+mamba repoquery whoneeds mesas --channel conda-forge/label/mesas_dev
 
 # List dependencies of `mesas`:
-mamba repoquery depends mesas --channel conda-forge
+mamba repoquery depends mesas --channel conda-forge/label/mesas_dev
 ```
 
 </details>
